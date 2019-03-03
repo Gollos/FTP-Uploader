@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="u6t-je-T25" customClass="TextFieldCell" customModule="FTP_Uploader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hAe-vJ-Z97">
+                    <rect key="frame" x="50" y="25" width="280" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                </textField>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username is required" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTd-U8-Fla">
+                    <rect key="frame" x="50" y="63" width="280" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.005003616808" blue="0.0099040894470000009" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yVY-yq-AvC" firstAttribute="trailing" secondItem="hAe-vJ-Z97" secondAttribute="trailing" constant="50" id="KLG-8e-0Vc"/>
+                <constraint firstItem="hAe-vJ-Z97" firstAttribute="top" secondItem="yVY-yq-AvC" secondAttribute="top" constant="25" id="Zdc-Ot-Sol"/>
+                <constraint firstItem="fTd-U8-Fla" firstAttribute="top" secondItem="hAe-vJ-Z97" secondAttribute="bottom" constant="8" id="cxm-T0-Ezk"/>
+                <constraint firstItem="fTd-U8-Fla" firstAttribute="centerX" secondItem="hAe-vJ-Z97" secondAttribute="centerX" id="sEA-2U-5Wx"/>
+                <constraint firstItem="hAe-vJ-Z97" firstAttribute="leading" secondItem="yVY-yq-AvC" secondAttribute="leading" constant="50" id="uoV-QX-wde"/>
+                <constraint firstItem="fTd-U8-Fla" firstAttribute="width" secondItem="hAe-vJ-Z97" secondAttribute="width" id="wVh-XG-jym"/>
+                <constraint firstItem="yVY-yq-AvC" firstAttribute="bottom" secondItem="fTd-U8-Fla" secondAttribute="bottom" constant="25" id="xKd-QR-wP2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="yVY-yq-AvC"/>
+            <connections>
+                <outlet property="errorLabel" destination="fTd-U8-Fla" id="DUH-bi-Uub"/>
+                <outlet property="textField" destination="hAe-vJ-Z97" id="IF9-Z4-S5n"/>
+            </connections>
+            <point key="canvasLocation" x="-211.19999999999999" y="234.78260869565219"/>
+        </view>
+    </objects>
+</document>
